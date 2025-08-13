@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         introduceButton.setTitleColor(.white, for: .normal)
         introduceButton.layer.cornerRadius = 10
         
-        // Bio styling
+        // Biography styling
         bioTextView.layer.cornerRadius = 8
         bioTextView.layer.borderWidth = 1
         bioTextView.layer.borderColor = UIColor.white.cgColor
@@ -122,8 +122,6 @@ class ViewController: UIViewController {
         alertController.addAction(action)
         present(alertController, animated: true, completion: nil)
     }
-    
-    // NEW: Color Well Action
     @objc func colorWellChanged(_ sender: UIColorWell) {
         if let pickedColor = sender.selectedColor {
             view.backgroundColor = pickedColor
